@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* DropdownComponent.css */
+.dropdown {
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.custom-select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style the dropdown arrow */
+.custom-select::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevents arrow from being clicked */
+}
+
+/* Style the dropdown options */
+.custom-select option {
+  padding: 8px;
+}
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: #999;
+  font-size: 14px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #333;
+}
